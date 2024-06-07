@@ -229,7 +229,7 @@ img {
 @media (min-resolution: 192dpi) {
   .back-hero-img {
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/back-hero-img.jpg);
+      url(../images/back-hero-img-tab.jpg);
   }
 }
 /* -------------Features-------- */
@@ -401,6 +401,17 @@ img {
 .icon-colored {
   fill: #f4f4fd;
 }
+@media (min-width: 768px) and (max-width: 1158px) {
+  .team-container {
+    flex-wrap: wrap;
+    row-gap: 64px;
+    justify-content: center;
+  }
+  .team-item {
+    flex-basis: calc((100% - 176px) / 2);
+    max-width: 264px;
+  }
+}
 /*-------------- Portfolio-------------*/
 .portfolio-container {
   display: flex;
@@ -409,7 +420,7 @@ img {
   row-gap: 48px;
 }
 .port-item-container {
-  flex-basis: calc(1128px / 6);
+  flex-basis: calc((100% - 240px) / 6);
 }
 .app-container {
   padding: 32px 16px;
@@ -446,6 +457,16 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (min-width: 768px) and (max-width: 1158px) {
+  .portfolio-container {
+    row-gap: 72px;
+    justify-content: center;
+  }
+  .port-item-container {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
 /* All update takes from "Info after About Studio" */
 
 /* ---- Footer---------- */
