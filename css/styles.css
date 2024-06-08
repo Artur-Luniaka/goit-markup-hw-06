@@ -45,8 +45,70 @@ img {
     max-width: 100%;
   }
 }
-/* ------------Header-------------- */
-/* Logo */
+@media (max-width: 1158px) {
+  .features-icons {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 318px;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .nav-item-container {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .contact-decor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) {
+  .header-menu-icon {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+} /* ------------Header-------------- */ /* Logo */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -161,6 +223,12 @@ img {
     bottom: -11px;
   }
 }
+@media (max-width: 767px) {
+  .header-container {
+    justify-content: space-between;
+    padding: 16px;
+  }
+}
 /*----------- Main-------------- */
 /* ----------Hero--------------- */
 
@@ -232,6 +300,25 @@ img {
       url(../images/back-hero-img-tab.jpg);
   }
 }
+@media (max-width: 767px) {
+  .back-hero-img {
+    min-width: 320px;
+    height: 432px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    width: 216px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .first-section {
+    padding: 72px 0;
+  }
+}
 /* -------------Features-------- */
 .visually-hidden {
   position: absolute;
@@ -280,18 +367,6 @@ img {
   margin-bottom: 8px;
 }
 @media (min-width: 768px) and (max-width: 1158px) {
-  .features-icons {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
   .subtitle-tab {
     font-weight: 700;
     font-size: 36px;
@@ -314,6 +389,27 @@ img {
   }
   .second-section {
     flex-basis: calc((100% - 192px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .features-container {
+    flex-direction: column;
+    gap: 72px;
+  }
+  .subtitle-tab {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+  }
+  .subtitle-text-tab {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
 }
 
@@ -412,6 +508,16 @@ img {
     max-width: 264px;
   }
 }
+@media (max-width: 767px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+  .team-item {
+    max-width: 264px;
+  }
+}
 /*-------------- Portfolio-------------*/
 .portfolio-container {
   display: flex;
@@ -464,6 +570,13 @@ img {
   }
   .port-item-container {
     flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
   }
 }
 
@@ -624,6 +737,50 @@ input::placeholder {
   }
   input::placeholder {
     opacity: 0.6;
+  }
+}
+@media (max-width: 767px) {
+  .footer-padding {
+    padding: 0;
+    padding-top: 96px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-padding > .footer-text {
+    text-align: left;
+    margin-bottom: 72px;
+  }
+  .footer-social-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-subscribe-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer-form {
+    flex-direction: column;
+  }
+  .footer-form-text {
+    text-align: center;
+  }
+  .footer-form-input {
+    opacity: 0.3;
+  }
+  input::placeholder {
+    opacity: 0.6;
+  }
+  .footer-form-button {
+    max-width: 165px;
+    margin: 0 auto;
+    margin-bottom: 96px;
   }
 }
 /* ---------Modal Window -------*/
