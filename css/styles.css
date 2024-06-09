@@ -234,6 +234,94 @@ img {
     padding: 16px 16px;
   }
 }
+@media (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    z-index: 999;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 40px 16px;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .mob-menu-close-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #e7e9fc;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mob-menu-close-icon {
+    fill: #2e2f42;
+  }
+  .mob-nav-menu-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .mob-nav-menu-link.accent {
+    color: #404bbf;
+  }
+  .mob-nav-menu-item {
+    list-style-type: none;
+    margin-bottom: 40px;
+  }
+  .mob-nav-menu {
+    margin-bottom: 168px;
+  }
+  .mob-menu-address {
+    font-style: normal;
+  }
+  .mob-menu-address-link {
+    text-decoration: none;
+    color: #434455;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    display: block;
+  }
+  .mob-menu-address-item {
+    margin-bottom: 24px;
+  }
+  .mob-menu-address-link.accent {
+    color: #4d5ae5;
+  }
+  .mob-menu-social-list {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+  }
+  .mob-menu-social-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mob-menu-social-icon {
+    fill: #f4f4fd;
+  }
+}
 /*----------- Main-------------- */
 /* ----------Hero--------------- */
 
@@ -996,5 +1084,17 @@ input::placeholder {
     min-height: 623px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .form-checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-text-mobile {
+    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-checkbox-link-text {
+    margin: 0;
   }
 }
