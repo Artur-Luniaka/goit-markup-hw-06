@@ -215,23 +215,20 @@ img {
   .address-container {
     flex-direction: column;
     gap: 12px;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
   .logo {
     margin-right: 120px;
-  }
-  .nav-list.current::after {
-    bottom: -11px;
   }
 }
 @media (max-width: 767px) {
   .logo {
     margin: 0 auto;
     margin-right: 149px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .header-container {
-    padding: 16px 16px;
+    padding: 0 16px;
   }
 }
 @media (max-width: 767px) {
@@ -490,6 +487,7 @@ img {
     width: 356px;
   }
   .features-container {
+    width: 736px;
     flex-wrap: wrap;
     row-gap: 72px;
     justify-content: center;
