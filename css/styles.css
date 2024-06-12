@@ -347,13 +347,25 @@ img {
 }
 .back-hero-img {
   background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/back-hero-img-desk.jpg), url(../images/back-hero-img-tab.jpg),
-    url(../images/back-hero-img-mob.jpg);
+    url(../images/back-hero-img-desk.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1158px) {
+  .back-hero-img {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/back-hero-img-desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .back-hero-img {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/back-hero-img-desk@2x.jpg);
+    }
+  }
 }
 .first-section {
   padding: 188px 0;
@@ -405,11 +417,17 @@ img {
     margin-bottom: 36px;
   }
 }
-@media (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
   .back-hero-img {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/back-hero-img-desk@2x.jpg) url(../images/back-hero-img-tab@2x.jpg),
-      url(../images/back-hero-img-mob@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/back-hero-img-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .back-hero-img {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/back-hero-img-tab@2x.jpg);
+    }
   }
 }
 @media (max-width: 767px) {
@@ -429,6 +447,19 @@ img {
   }
   .first-section {
     padding: 72px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .back-hero-img {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/back-hero-img-mob.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .back-hero-img {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/back-hero-img-mob@2x.jpg);
+    }
   }
 }
 /* -------------Features-------- */
@@ -835,15 +866,7 @@ input::placeholder {
     flex-wrap: wrap;
     padding-top: 96px;
     padding-bottom: 96px;
-  }
-  .footer-padding {
-    margin: 0 auto;
-  }
-  .footer-social-phone {
-    margin: 0 auto;
-  }
-  .footer-subscribe-container {
-    margin: 0 auto;
+    max-width: 630px;
   }
   .footer-padding {
     margin-bottom: 72px;
